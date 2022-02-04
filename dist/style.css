@@ -1,0 +1,227 @@
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: block;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--very-dark-blue);
+}
+
+.MainContainer {
+  margin: 4rem 2rem;
+  background-color: var(--dark-desaturated-blue);
+  border-radius: 0.5rem 0.5rem;
+}
+
+@media screen and (min-width: 819px) {
+  .MainContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-left: 2rem;
+  }
+}
+
+.MainImage {
+  position: relative;
+}
+
+@media screen and (min-width: 819px) {
+  .MainImage {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.MainImage img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+@media screen and (min-width: 819px) {
+  .MainImage img {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+.Layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(124, 22, 187, 0.507);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+@media screen and (min-width: 819px) {
+  .Layer {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+.Stats {
+  padding: 0.7rem 1.5rem;
+}
+
+@media screen and (min-width: 819px) {
+  .Stats {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.MainTitle {
+  padding: 0 0.8rem;
+  color: var(--white);
+  text-align: center;
+}
+
+@media screen and (min-width: 819px) {
+  .MainTitle {
+    padding: 1rem 0;
+    margin-right: 2rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .MainTitle {
+    padding-top: 3rem;
+    font-size: 30px;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .MainTitle {
+    padding-top: 4rem;
+    font-size: 35px;
+    line-height: 2.5rem;
+  }
+}
+
+.MainTitle span {
+  color: var(--soft-violet);
+}
+
+.MainText {
+  padding-bottom: 1rem;
+  color: var(--slightly-transparent-white);
+  text-align: center;
+}
+
+@media screen and (min-width: 819px) {
+  .MainText {
+    margin-right: 2rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .MainText {
+    margin-right: 5rem;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .MainText {
+    margin-right: 10rem;
+    font-size: 20px;
+  }
+}
+
+.NumbersMain {
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (min-width: 819px) {
+  .NumbersMain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 6rem;
+    padding-bottom: 2rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .NumbersMain {
+    margin-right: 10rem;
+    font-size: 18px;
+    max-width: 267px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .NumbersMain {
+    margin-right: 15rem;
+    max-width: 307px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .NumbersMain {
+    margin-right: 20rem;
+    padding-top: 3rem;
+    max-width: 347px;
+  }
+}
+
+.Count {
+  margin: 0;
+  color: var(--white);
+}
+
+.CountText {
+  margin: 0;
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--slightly-transparent-white-headings);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--soft-violet);
+}
+/*# sourceMappingURL=style.css.map */
